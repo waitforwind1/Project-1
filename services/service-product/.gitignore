@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Others ###
+/services/service-product/src/main/resources/application-local.yml
+
