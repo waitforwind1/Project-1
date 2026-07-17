@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8858
+      web-context-unify: false
+    openfeign:
+      client:
+        config:
+          service-product:
+            read-timeout: 3000
+            connect-timeout: 3000
+feign:
+  sentinel:
+    enabled: true
+
+

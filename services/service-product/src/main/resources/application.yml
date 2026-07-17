@@ -1,0 +1,32 @@
+spring:
+  application:
+   name: service-product
+
+  profiles:
+    active: dev
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        enabled: true
+      config:
+        server-addr: localhost:8848
+        namespace: dev
+    sentinel:
+      transport:
+        dashboard: localhost:8858
+        port: 8719
+feign:
+  sentinel:
+    enabled: true
+
+server:
+  port: 8000
+  servlet:
+    context-path: /api
+
+# 开启对应包的日志
+logging:
+  level:
+    com.hoops.serviceproduct.controller: debug
