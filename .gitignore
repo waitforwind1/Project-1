@@ -34,4 +34,6 @@ build/
 
 ###others###
 services/service-product/.env.development
+services/service-product/.env.product
+
 
