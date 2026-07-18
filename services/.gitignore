@@ -35,3 +35,4 @@ build/
 ### Others ###
 application-local.yml
 .env.development
+.env.local
